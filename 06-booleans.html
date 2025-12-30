@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    
+    <script>
+        /*true
+        false
+        console.log(typeof true);
+        
+        console.log(3 < 5);
+
+        if(false){
+            console.log('Hello');
+        } else{
+            console.log('else');
+        }
+
+        // If else condition using boolean values 
+        const age = 15;
+
+        if(age >= 16){
+            console.log('You can Drive');
+            
+        } else{
+            console.log('You can Not Drive');
+            
+        }*/
+
+        /*
+        console.log(true || false);
+        console.log(!true); */
+
+        // Truthy or Falsy values
+        /* -Falsy values are :- false , 0 , undefined , null , naN these are called falsy values
+           -Truthy values are :- every thing are thruthy values except the values in falsy .
+           -Truthy and falsy values used as shortcut into a if condition 
+           -By using trythy and falsy we dont need to give the conditions to if condition we can directly use these values
+           */
+
+        /*
+        if(6){
+            console.log('truthy');
+        }
+
+        //Here we are using truthy value in if condition otherwise we need to give cartQuantity > 0 to check
+        const cartQuantity = 5;
+        if(cartQuantity){
+            console.log('Cart has Products');
+            
+        }
+        
+        console.log(!0); // gives true
+
+        console.log('text' / 5); // gives Nan
+        */
+
+        // Shortcut for if-else condition 
+        // Ternery operator
+
+        const result = 0 ? 'truthy' : 'falsy';
+        console.log(result);
+        
+        // Guard Operator
+        false && console.log('Hello');
+        
+        const message = true && 'Hello Hii';
+        console.log(message);
+        
+        //Default Operator ||
+        const currency = 'EUR' || 'USD';
+        const currency1 = undefined || 'Usd' ;
+        console.log(currency);
+        console.log(currency1);
+        
+        
+        
+    </script>
+</body>
+</html>
